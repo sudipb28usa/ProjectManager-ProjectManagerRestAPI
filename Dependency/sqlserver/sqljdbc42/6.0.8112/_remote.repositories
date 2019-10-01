@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 30 20:37:01 EDT 2019
+sqljdbc42-6.0.8112.jar>=
+sqljdbc42-6.0.8112.pom>=
