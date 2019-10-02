@@ -8,8 +8,8 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
 		<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
 		<property name="hibernate.connection.url">jdbc:sqlserver://SQLDEV130.usa-ed.net:1460;databaseName=grc_apg_metamodel_d220</property>
-		<property name="hibernate.connection.username">crsuser</property>
-		<property name="hibernate.connection.password">10scR00t</property>
+		<property name="hibernate.connection.username">XXX</property>
+		<property name="hibernate.connection.password">XXX</property>
 		<property name="hibernate.hbm2ddl.auto">none</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.c3p0.min_size">5</property>
