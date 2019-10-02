@@ -190,6 +190,13 @@
 		<!-- EclEmma -->
 		<!-- <dependency> <groupId>org.jacoco</groupId> <artifactId>jacoco-maven-plugin</artifactId> 
 			<version>0.8.4</version> <type>maven-plugin</type> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/kg.apc/jmeter-plugins-extras -->
+		<dependency>
+			<groupId>kg.apc</groupId>
+			<artifactId>jmeter-plugins-extras</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -277,44 +284,20 @@
 				<version>3.0.0-M3</version>
 			</plugin>
 			<!-- J Meter -->
-			<!-- <plugin> <groupId>com.lazerycode.jmeter</groupId> <artifactId>jmeter-maven-plugin</artifactId> 
-				<version>2.1.0</version> <executions> <execution> <id>jmeter-tests</id> <goals> 
-				<goal>jmeter</goal> </goals> </execution> </executions> </plugin> -->
-
 			<plugin>
 				<groupId>com.lazerycode.jmeter</groupId>
 				<artifactId>jmeter-maven-plugin</artifactId>
-				<version>2.1.0</version>
+				<version>1.4.1</version>
 				<executions>
 					<execution>
 						<id>jmeter-tests</id>
+						<phase>verify</phase>
 						<goals>
 							<goal>jmeter</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>de.codecentric</groupId>
-				<artifactId>jmeter-graph-maven-plugin</artifactId>
-				<version>0.1.0</version>
-				<configuration>
-					<inputFile>${project.build.directory}/jmeter/results/20170319-BlazeDemo
-						Home Page.jtl</inputFile>
-					<graphs>
-						<graph>
-							<pluginType>ResponseTimesOverTime</pluginType>
-							<width>800</width>
-							<height>600</height>
-							<outputFile>${project.build.directory}/jmeter/results/BlazeDemo
-								Request.png</outputFile>
-						</graph>
-					</graphs>
-				</configuration>
-			</plugin>
-
-
 
 		</plugins>
 	</build>
